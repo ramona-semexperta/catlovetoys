@@ -1,0 +1,33 @@
+title: Cat Love Toys
+tagline: "Play, Pounce, Purr!"
+description: >-
+  Toy reviews, comparisons, and cat-lover content — dedicated to Alfi,
+  the cat who ran this whole show.
+url: "https://catlovetoys.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+collections_dir: .
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Category structure (Phase 1: toys only. Add furniture/food/treats/litter later)
+categories_list:
+  - toys
+  - behavior-training
+  - health-diet
+  - fun-lifestyle
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
