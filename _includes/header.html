@@ -6,7 +6,22 @@
     <nav class="site-nav">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="{{ '/toys/' | relative_url }}">Toy Comparisons</a>
+
+      <div class="nav-dropdown">
+        <a href="{{ '/toys/' | relative_url }}">Cat Toys ▾</a>
+        <div class="dropdown-menu">
+          <a href="{{ '/toys/interactive/' | relative_url }}">Interactive & Electronic Toys</a>
+          <a href="{{ '/toys/teasers-wands/' | relative_url }}">Teasers & Wands</a>
+          <a href="{{ '/toys/balls-chasers/' | relative_url }}">Balls & Chasers</a>
+          <a href="{{ '/toys/catnip/' | relative_url }}">Catnip Toys</a>
+          <a href="{{ '/toys/scratchers/' | relative_url }}">Scratchers</a>
+        </div>
+      </div>
+
+      <a href="{{ '/food/' | relative_url }}">Cat Food</a>
+      <a href="{{ '/treats/' | relative_url }}">Cat Treats</a>
+      <a href="{{ '/supplies/' | relative_url }}">Cat Supplies</a>
+      <a href="{{ '/trees/' | relative_url }}">Cat Trees</a>
       <a href="{{ '/about/' | relative_url }}">About Alfi</a>
     </nav>
   </div>

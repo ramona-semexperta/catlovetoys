@@ -1,6 +1,6 @@
 ---
 ---
-
+@import "minima";
 
 :root {
   --coral: #FF6B5B;
@@ -40,13 +40,71 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.site-nav a {
+.site-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-nav > a {
   color: #fff;
   text-decoration: none;
   margin-left: 1.25rem;
   font-weight: 600;
+  white-space: nowrap;
 }
-.site-nav a:hover { text-decoration: underline; }
+.site-nav > a:hover { text-decoration: underline; }
+
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+  margin-left: 1.25rem;
+}
+.nav-dropdown > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nav-dropdown > a:hover { text-decoration: underline; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  padding: 0.5rem 0;
+  min-width: 240px;
+  z-index: 20;
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--charcoal);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover {
+  background: var(--cream);
+  color: var(--coral);
+}
+
+/* Hero with image */
+.hero-banner {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 0 0 24px 24px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
 
 /* Hero */
 .hero {

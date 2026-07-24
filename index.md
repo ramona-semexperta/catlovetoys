@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<img src="{{ '/assets/images/alfi-hero.png' | relative_url }}" alt="Alfi the cat sitting on a box of toys" class="hero-banner">
+
 <section class="hero">
   <h1>Play, Pounce, Purr! 🐾</h1>
   <p class="hero-sub">Honest cat toy reviews, comparisons, and real stories — inspired by Alfi, the tabby who ran this whole household.</p>
